@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 作者 -->
+    <meta name="author" content="author">
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <!-- content的参数有all，none，index，noindex，follow，nofollow，默认是all -->
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <!-- 解决部分兼容性问题，如果安装了GCF，则使用GCF来渲染页面，如果未安装GCF，则使用最高版本的IE内核进行渲染。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <!-- 页面按原比例显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="/public/assets/libs/bootstrap/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/main.css" />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <title><%= title%></title>
+</head>
+<body>
+<%- include('components/head.html', {page: 'index'})%>
+<!--全屏轮播banner-->
+<div id="carousel-example-generic" class="carousel slide my-slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInLeft"></span>
+                    <span class="title bounceInLeft">移动空间</span>
+                    <span class="desc bounceInLeft">一次冲击全球的 移动多媒体</span>
+                    <span class="desc bounceInLeft">一个沉浸式体验、多维感知、愉悦新颖的空间。</span>
+                </p>
+            </a>
+        </div>
+        <div class="item">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInDown"></span>
+                    <span class="title bounceInDown">移动空间</span>
+                    <span class="desc bounceInDown">一次冲击全球的 移动多媒体</span>
+                    <span class="desc bounceInDown">一个沉浸式体验、多维感知、愉悦新颖的空间。</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<!--全屏轮播banner-->
+<!--品牌 教育 公关-->
+<div class="eduGongguan">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="con pinpai">
+                    <div class="bgs"><img src="/public/assets/images/main/index-brand.jpg" ></div>
+                    <div class="box">
+                        <div class="cname">品牌</div>
+                        <div class="ename">BRAND</div>
+                    </div>
+                    <div class="backtobg"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="con edu">
+                    <div class="bgs"><img src="/public/assets/images/main/index-education.jpg" ></div>
+                    <div class="box">
+                        <div class="cname">教育</div>
+                        <div class="ename">education</div>
+                    </div>
+                    <div class="backtobg"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="con gongguan">
+                    <div class="bgs"><img src="/public/assets/images/main/index-relate.jpg" ></div>
+                    <div class="box">
+                        <div class="cname">公关</div>
+                        <div class="ename">P.R</div>
+                    </div>
+                    <div class="backtobg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--品牌 教育 公关-->
+<!--产品介绍-->
+<div class="produceInstru">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-sm-6">
+                        <div class="con">
+                            <div class="bgs"><img src="/public/assets/images/main/index_product1.jpg" ></div>
+                            <div class="box">
+                                <div class="cname">产品介绍</div>
+                            </div>
+                            <div class="backtobg"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-sm-6">
+                        <div class="con">
+                            <div class="bgs"><img src="/public/assets/images/main/index_producet2.jpg" ></div>
+                            <div class="box">
+                                <div class="cname">品牌</div>
+                            </div>
+                            <div class="backtobg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-xs-12">
+                <div class="con">
+                    <div class="bgs bsd"><img src="/public/assets/images/main/index_producet3.jpg" ></div>
+                    <div class="box">
+                        <div class="cname">产品介绍</div>
+                    </div>
+                    <div class="backtobg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--产品介绍-->
+<!--VShow 描述-->
+<div class="vshowInfo clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="leftcont">
+                    <h1>VSHOW<span>DOME.COM</span></h1>
+                    <h4>微秀创意™</h4>
+                    <div class="addr">
+                        <address>
+                            深圳市南山区蛇口南海意库6栋502#<br>
+                            <span class="hidden-xs">电话：</span><i class="fa fa-phone visible-xs-inline" aria-hidden="true"></i>0755-26812810<br>
+                            <span class="hidden-xs">邮箱：</span>yong@vshowdome.com<br>
+                            <span class="hidden-xs">微信搜索公众号：</span>Vshow球幕创意
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="rightcont">
+                    <div class="desc">深圳市微秀文化传播有限公司为Fulldome.pro授权的大中华区的代理公司，在科技发展的年代应运而生。以球幕为核心，结合创意策划、影片制作，技术创新等方式，共同打造国内一线领域阵线，是以“科技艺术、科技娱乐、科技教育”融合打造的创新型、高性价比球幕产品的高端数字化科技公司。</div>
+                    <div class="desc">我们是一支经验丰富、具有国际化视野和创新能力的团队；</div>
+                    <div class="desc">我们坚持“与梦想者同行”，致力于成为“从中国制造到中国创造”这场变革的重要参与者。</div>
+                    <div class="desc"><img src="/public/assets/images/main/ball-city.png" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--VShow 描述-->
+<%- include('components/foot.html')%>
+<script type="text/javascript" src="/public/assets/scripts/vshow/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/public/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/public/assets/scripts/vshow/index.js"></script>
+</body>
+</html>

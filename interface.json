@@ -1,0 +1,20 @@
+{
+  "title": "sem接口集合定义",
+  "version": "1.0.0",
+  "engine": "mockjs",
+  "rulebase": "./interfaceRules",
+  "status": "online",
+  "interfaces": [
+    {
+      "name": "留学方案",
+      "desc": "",
+      "id": "site.abroadPlan",
+      "urls": {
+        "online": "https://crpapi.shunshunliuxue.com/aws/sem/tocrm/"
+      },
+      "method": "get",
+      "dataType": "json"
+    }
+
+  ]
+}

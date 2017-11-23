@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.fl {
+    float: left;
+}
+.box {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.box button {
+    padding: 0 10px;
+    margin: 0 10px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    outline: none;
+    outline-offset: 0;
+}
+.box .first-page,
+.box .last-page {
+    margin: 0;
+}
+.box .pageWrap {
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+.box .pageWrap ul {
+    width: 100000px;
+    height: 30px;
+    display: inline-block;
+}
+.box .pageWrap ul li {
+    width: 60px;
+    height: 30px;
+    padding: 1px 2px;
+    border: 1px solid #e6e6e6;
+    line-height: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    float: left;
+    background: #fff;
+    font-size: 12px;
+}
+.box .pageWrap ul .sel-page {
+    background-color: #ff5a60;
+    color: #fff;
+    border: 1px solid #ff5a60;
+}
+.box .jump-text {
+    width: 60px;
+    height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 5px;
+    float: left;
+}
+.box .jump-button {
+    margin: 0;
+    float: left;
+}
+.box .total-pages,
+.box .total-count {
+    display: none;
+    margin-left: 10px;
+    float: left;
+    font-size: 14px;
+}
+
+.ui-pagination-container {
+    height: 30px;
+    line-height: 30px;
+}
+
+.ui-pagination-container .ui-pagination-page-item {
+    font-size: 14px;
+    padding: 4px 10px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    color: #333;
+    margin: 0 3px;
+    text-decoration: none;
+}
+
+.ui-pagination-container .ui-pagination-page-item:hover {
+    border-color: #e6e6e6;
+    color: #333;
+    text-decoration: none;
+}
+
+.ui-pagination-container .ui-pagination-page-item.active {
+    background: #ff5a60;
+    border-color: #ff5a60;
+    color: #fff;
+    cursor: default;
+}

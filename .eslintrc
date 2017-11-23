@@ -1,0 +1,36 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "mongo": true,
+    "es6": true
+  },
+  "global": {
+    "__DEV__": true,
+    "NODE_ENV": false,
+    "__PROD__": false,
+    "__DEBUG__": false,
+    "_": false,
+    "__BASENAME__": true,
+    "$": false
+  },
+  "rules": {
+    "func-names": 0,
+    "semi": [2, "always"],
+    "react/jsx-quotes": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "no-console": 0,
+    "max-len": [2, 200, 4, {"ignoreUrls": true}],
+    "arrow-body-style": [2, "always"],
+    "no-unused-expressions": 0
+  }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 作者 -->
+    <meta name="author" content="author">
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <!-- content的参数有all，none，index，noindex，follow，nofollow，默认是all -->
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <!-- 解决部分兼容性问题，如果安装了GCF，则使用GCF来渲染页面，如果未安装GCF，则使用最高版本的IE内核进行渲染。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <!-- 页面按原比例显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="/public/assets/libs/bootstrap/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/page.css" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/product.css" />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <title><%= title%></title>
+</head>
+<body>
+<%- include('components/head.html', {page: 'list'})%>
+<!--头部轮播-->
+<div id="carousel-example-generic" class="carousel slide my-slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInLeft"></span>
+                    <span class="title bounceInLeft">移动空间</span>
+                    <span class="desc bounceInLeft">一次冲击全球的 移动多媒体</span>
+                    <span class="desc bounceInLeft">一个沉浸式体验、多维感知、愉悦新颖的空间。</span>
+                </p>
+            </a>
+        </div>
+        <div class="item">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInDown"></span>
+                    <span class="title bounceInDown">移动空间</span>
+                    <span class="desc bounceInDown">一次冲击全球的 移动多媒体</span>
+                    <span class="desc bounceInDown">一个沉浸式体验、多维感知、愉悦新颖的空间。</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<!--头部轮播-->
+<!--选择案例-->
+<div class="selcase">
+    <div class="container">
+        <div class="row">
+            <div class="selcasebox">
+                <div class="selcasebox-selectbox"><span>-</span>选择案例</div>
+                <div class="sellist row">
+                    <div class="sellist-sp col-xs-3 col-sm-1 col-md-1">筛选：</div>
+                    <div class="col-xs-9 col-sm-11 col-md-11 ulli">
+                        <ul>
+                            <li><a href="javascript:void(0)" class="active">全部</a></li>
+                            <li><a href="javascript:void(0)">商场活动</a></li>
+                            <li><a href="javascript:void(0)">户外活动</a></li>
+                            <li><a href="javascript:void(0)">品牌推广</a></li>
+                            <li><a href="javascript:void(0)">博物馆＆科技馆</a></li>
+                            <li><a href="javascript:void(0)">音乐节＆狂欢节</a></li>
+                            <li><a href="javascript:void(0)">展览展会</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--选择案例-->
+<!--案例列表-->
+<div class="caselist-cont">
+    <div class="container">
+        <div class="row">
+            <ul class="listcont" id="listcont">
+                <li class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="firstbig other">
+                        <img src="/public/assets/images/case/case_img1.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img2.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img3.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img4.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img5.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img6.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img7.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img8.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img9.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img10.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img11.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img12.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                    <div class="img other">
+                        <img src="/public/assets/images/case/case_img13.jpg" alt="" />
+                        <div class="showtext">
+                            <h2>马来西亚兰卡威全景的天空球幕</h2>
+                            <p>博物馆&科技馆</p>
+                            <p>2014年6月 马来西亚兰卡威 11米</p>
+                        </div>
+                        <div class="showbg"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="box"><div id="pagination1"></div></div>
+        </div>
+    </div>
+</div>
+<!--案例列表-->
+<%- include('components/foot.html')%>
+<script type="text/javascript" src="/public/assets/scripts/vshow/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/public/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/public/assets/scripts/vshow/page.js"></script>
+<script type="text/javascript" src="/public/assets/scripts/vshow/productList.js"></script>
+</body>
+</html>

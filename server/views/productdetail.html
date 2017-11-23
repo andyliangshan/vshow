@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 作者 -->
+    <meta name="author" content="author">
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <!-- content的参数有all，none，index，noindex，follow，nofollow，默认是all -->
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <!-- 解决部分兼容性问题，如果安装了GCF，则使用GCF来渲染页面，如果未安装GCF，则使用最高版本的IE内核进行渲染。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <!-- 页面按原比例显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="/public/assets/libs/bootstrap/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/product.css" />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <title><%= title%></title>
+</head>
+<body>
+<%- include('components/head.html')%>
+<!--头部轮播-->
+<div id="carousel-example-generic" class="carousel slide my-slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInLeft"></span>
+                    <span class="title bounceInLeft">移动空间</span>
+                    <span class="desc bounceInLeft">一次冲击全球的 移动多媒体</span>
+                    <span class="desc bounceInLeft">一个沉浸式体验、多维感知、愉悦新颖的空间。</span>
+                </p>
+            </a>
+        </div>
+        <div class="item">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInDown"></span>
+                    <span class="title bounceInDown">移动空间</span>
+                    <span class="desc bounceInDown">一次冲击全球的 移动多媒体</span>
+                    <span class="desc bounceInDown">一个沉浸式体验、多维感知、愉悦新颖的空间。</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<!--头部轮播-->
+<!--选择案例-->
+<div class="selcasedetail">
+    <div class="container">
+        <div class="row">
+            <div class="selcaseboxdetail">
+                <div class="selcaseboxdetail-selectbox"><span>-</span>选择案例</div>
+                <div class="sellistdetail row">
+                    <div class="sellist-spdetail col-xs-3 col-sm-1 col-md-1">筛选：</div>
+                    <div class="col-xs-9 col-sm-11 col-md-11 ullidetail">
+                        <ul>
+                            <li><a href="javascript:void(0)" class="active">全部</a></li>
+                            <li><a href="javascript:void(0)">商场活动</a></li>
+                            <li><a href="javascript:void(0)">户外活动</a></li>
+                            <li><a href="javascript:void(0)">品牌推广</a></li>
+                            <li><a href="javascript:void(0)">博物馆＆科技馆</a></li>
+                            <li><a href="javascript:void(0)">音乐节＆狂欢节</a></li>
+                            <li><a href="javascript:void(0)">展览展会</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--选择案例-->
+<!--案例列表-->
+<div class="casedetaillist-cont">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetail">
+                <img src="/public/assets/images/product/pruduct_detail_im1.jpg" alt=""/>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetaildesc">
+                <h2>2016美美百货圣诞节</h2>
+                <div class="position">2016年 乌鲁木齐美美百货 7米</div>
+                <div class="line"></div>
+                <div class="desc">乌鲁木齐市最高大上的商城美美百货，弥漫着浓浓的圣诞新年节日气氛，而来此购物的潮人们却都被一个8米的封闭式球幕所吸引着。这是乌鲁木齐首个360°的娱乐项目，身临其境的球幕体验真是让每一位来到美美百货购物的潮人们都惊喜连连，赞叹不已。</div>
+                <div class="mutiline-r"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetaildesc coblist">
+                <h2>复活节的蛋形球幕</h2>
+                <div class="position">2016年 乌克兰基辅 7米</div>
+                <div class="line"></div>
+                <div class="desc">坐落在一个山坡上，俯瞰着乌克兰基辅的Dnieper河，坐落着Pysanka球幕，这是一个伪装成装饰复活节彩蛋的球幕剧院。乌克兰人以及其他东欧文化都有一个长期的传统，用蜡和墨水来装饰鸡蛋，创造复杂的图案。在球幕内，每一个环节都会播放特别的电影“复活蛋宇宙”，讲述宇宙的创造和许多文化中的宇宙符号，这些文化可能出现在pysanky艺术中。</div>
+                <div class="mutiline-l"></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetail">
+                <img src="/public/assets/images/product/pruduct_detail_im2.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetail">
+                <img src="/public/assets/images/product/pruduct_detail_im3.jpg" alt=""/>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetaildesc">
+                <h2>马来西亚兰卡威全景的天空球幕</h2>
+                <div class="position">2014年6月 马来西亚兰卡威 11米</div>
+                <div class="line"></div>
+                <div class="desc">我们不仅仅只是安装了一个球幕，更是建造了一个与兰卡威全景想融合的未来感设计的艺术建筑。这个由我们搭建的天文馆建筑取名叫“天空球幕”，与其他的天空出租车，天空小径，和天桥等特征建筑相呼应，共同构建了兰卡威全景缆车的整体建筑。</div>
+                <div class="mutiline-r"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetaildesc coblist">
+                <h2>哇！看这满场的股票！</h2>
+                <div class="position">2015年12月3日-2016年3月20日 伦敦萨默塞特宫 5米</div>
+                <div class="line"></div>
+                <div class="desc">Lise Autogena和Josh Portway和他们的黑沙洲提供了5米的球幕；暗物质装置在伦敦萨默塞特宫的大爆炸数据展中亮相。黑沙洲；暗物质是一个实时的金融市场实时展示装置，由世界证券交易所的现场交易数据驱动。公司被认为是闪烁和发光的恒星，在实时的股票在世界各地交易。辉光的亮度和持续时间指示交易活动的交易量。星星慢慢漂移，对应市场复杂的潮流，聚类和分为缓慢变化的星云、星系和星座。它是一个不断发展的艺术作品，适于1998年并首次在2000年在英国泰特美术馆进行了首次展览。黑沙洲；暗物质是另外一个我们与全世界的艺术家合作的另一个例子。</div>
+                <div class="mutiline-l"></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetail">
+                <img src="/public/assets/images/product/pruduct_detail_im4.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetail">
+                <img src="/public/assets/images/product/pruduct_detail_im5.jpg" alt=""/>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 contdetaildesc">
+                <h2>异想天开·超现实主义大师达利艺术展</h2>
+                <div class="position">2017年10月2日 福建厦门 12米</div>
+                <div class="line"></div>
+                <div class="desc">由厦门More Art瞐·艺术、胜大国际文化企业集团与厦门文广传媒集团主办，厦门广播电视广告有限公司承办的“异想天开-超现实主义大师达利真迹展”于2017年10月1日空降厦门，展期三个月。本次展览是福建有史以来规格最高的世界级艺术大师展，将呈现100+作品真迹，涵盖画作真迹、生活摄影、影像动画等艺术臻品。 副展则是。</div>
+                <div class="mutiline-r"></div>
+            </div>
+        </div>
+        <!--加载更多按钮箭头-->
+        <div class="loadmore-case" id=""><span><img src="/public/assets/images/product/pruduct_detail_loadiing.jpg" alt=""/></span></div>
+        <!--返回列表顶部箭头-->
+        <div class="backlistTop"><img src="/public/assets/images/product/pruduct_detail_top.jpg" alt=""/></div>
+        <!--返回列表顶部箭头-->
+    </div>
+</div>
+<!--案例列表-->
+<%- include('components/foot.html')%>
+<script type="text/javascript" src="/public/assets/scripts/vshow/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/public/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/public/assets/scripts/vshow/productDetail.js"></script>
+</body>
+</html>

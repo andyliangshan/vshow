@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 作者 -->
+    <meta name="author" content="author">
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <!-- content的参数有all，none，index，noindex，follow，nofollow，默认是all -->
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <!-- 解决部分兼容性问题，如果安装了GCF，则使用GCF来渲染页面，如果未安装GCF，则使用最高版本的IE内核进行渲染。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <!-- 页面按原比例显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="/public/assets/libs/bootstrap/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/about.css" />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <title><%= title%></title>
+</head>
+<body>
+<%- include('components/head.html', {page: 'service'})%>
+<!--全屏轮播banner-->
+<div id="carousel-example-generic" class="carousel slide my-slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/service/service_lunbo_img1.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInLeft"></span>
+                    <span class="title bounceInLeft">服务介绍</span>
+                    <span class="desc bounceInLeft">来自国外的专业技术团队，提供一站式集成个性服务方案。</span>
+                    <span class="desc bounceInLeft">打造无盲点的视觉效果展示，享受不一样的视觉之美。</span>
+                </p>
+            </a>
+        </div>
+        <div class="item">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInDown"></span>
+                    <span class="title bounceInLeft">服务介绍</span>
+                    <span class="desc bounceInLeft">来自国外的专业技术团队，提供一站式集成个性服务方案。</span>
+                    <span class="desc bounceInLeft">打造无盲点的视觉效果展示，享受不一样的视觉之美。</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<!--全屏轮播banner-->
+<!--服务介绍-->
+<div class="servicebox">
+    <div class="container">
+        <div class="serviceInfo">
+            <div class="serviceInfo-cont">
+                <div class="serviceInfo-cont-title">专业的服务理念</div>
+                <h1>服务介绍</h1>
+                <div class="serviceInfo-cont-line"><img src="/public/assets/images/product/product_line.png" alt="" /></div>
+            </div>
+            <div class="serviceInfo-cont-desc">致力于从原生形态至升华呈现的全生命周期解决方案，始终追求作品在功能、技术、艺术及传播上的完美结合，注重作品带给客户的价值感和增值效果，国外专业技术团队为客户提出针对性的个性化定制解决方案，如外观造型视觉设计，影片内容的定制，提供多种解决方案，从国际品质的一流产品到国内的高端产品，高性价比产品的解决方案。做到全产业链条，全覆盖的产品优势，根据国际前沿的创意空间结合客户需求，提供满足客户需求与引领市场风尚的定制化服务。</div>
+        </div>
+    </div>
+    <div class="servicebox-img"><img src="/public/assets/images/service/service_showimg.jpg" alt="" /></div>
+    <div class="serviceArt">
+        <div class="container">
+            <div class="serviceArt-title">
+                <div class="serviceArt-title-top"><img src="/public/assets/images/service/service_line.png" alt="" /></div>
+                <h1>创新沉浸式感官体验，引领移动空间艺术</h1>
+                <div class="serviceArt-title-top"><img src="/public/assets/images/service/service_line.png" alt="" /></div>
+            </div>
+            <div class="serviceArt-list">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="serviceArt-list-desc">运用于各行业商业活动、时尚走秀、景区活动等，具有艺文娱乐体验和收获众多营销传播热点，有效提吸聚人气。</div>
+                        <div class="serviceArt-list-title">商业</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="serviceArt-list-desc">运用于企业品牌发布会、宣传活动等，为企业提供品牌知名度和影响力。</div>
+                        <div class="serviceArt-list-title">品牌</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="serviceArt-list-desc">移动空间沉浸式的视觉效果和立体环绕的音响效果，打造创意节日趴，引领时代潮流。</div>
+                        <div class="serviceArt-list-title">音乐</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="serviceArt-list-desc">打造极具艺术感染力与互动科技性的展厅，革新了“科文娱艺”的体验乐趣，并能创造出吸引更多人群的文化体验。</div>
+                        <div class="serviceArt-list-title">展会</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="serviceArt-list-desc">沉浸式的体验，从而打破屏幕与观众之间的屏障。移动空间将虚拟现实的沉浸式教育从个人观看体验转化成集体共享式体验。</div>
+                        <div class="serviceArt-list-title">教育</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--服务介绍-->
+<%- include('components/foot.html')%>
+<script type="text/javascript" src="/public/assets/scripts/vshow/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/public/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/public/assets/scripts/vshow/about.js"></script>
+</body>
+</html>

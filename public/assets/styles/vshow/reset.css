@@ -1,0 +1,140 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{
+    margin:0;padding:0;font-family:'Microsoft YaHei', '宋体', 'Arial', 'Tahoma', 'Helvetica', 'sans-serif'}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+a,a:hover{text-decoration:none;}
+body{background:#fff;}
+a,a:hover{color:#313131;}
+input, select, textarea{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background-color:transparent;
+    border-color:transparent;
+}
+input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
+    border: none;
+    outline: none;
+}
+textarea {
+    resize: none;
+}
+
+/*全部-导航条样式复写*/
+#header .navbar-default{
+    border:0;
+    margin-bottom: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.9);
+}
+#header .navbar-default .navbar-nav>li>a{
+    font-size: 16px;
+    padding: 16px 25px 5px !important;
+    color: #313131;
+}
+#header .navbar-default .navbar-nav>li>a:hover{
+    color: #ff1d25;
+}
+#header .navbar-default .navbar-nav>.active>a, #header .navbar-default .navbar-nav>.active>a:hover, #header .navbar-default .navbar-nav>.active>a:focus{
+    color:#ff1d25;
+    background: rgba(255,255,255,0);
+}
+#header .navbar-default .navbar-nav>li .line-top{
+    border-top: 1px solid #ff1d25;
+    width: 18px;
+    margin: auto;
+}
+.navbar {
+    padding: 25px 0;
+}
+/*全部-导航条样式复写*/
+.contact {
+    clear: both;
+    overflow: hidden;
+    background: url(/public/assets/images/main/footer-bg.jpg) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact .clients {
+    max-width: 1000px;
+}
+.contact .bgcontact {
+    position: absolute;
+    width: 100%;
+}
+.contact .bgcontact img {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    margin-left: -980px;
+    top: 0;
+}
+.contact .dark-bg {
+    padding: 120px 0;
+    background-color: rgba(47, 46, 46, 0.7);
+    color: #fff;
+}
+.contact .title {
+    color: #fff;
+}
+.contact .text-center {
+    text-align: center;
+    font-size: 30px;
+}
+.contact .title div {
+    height: 3px;
+    width: 40px;
+    background-color: #f7931d;
+    margin: 20px auto 35px auto;
+}
+.contact .clients {
+    margin-bottom: 50px;
+}
+.contact .clients img {
+    width: 130px;
+    padding: 20px;
+}
+.contact .contact-btn img {
+    margin: 70px 0 20px 0;
+    width: 180px;
+    height: 180px;
+}
+.contact .contact-btn h4 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact .contact-btn p {
+    font-size: 18px;
+    margin: 5px;
+}
+.footer {
+    background-color: #2f2e2e;
+    color: #999;
+    padding: 30px 0;
+    line-height: 1.6;
+}
+.footer .text-left {
+    color: #999;
+}
+
+.carousel {
+    padding-top: 100px;
+}

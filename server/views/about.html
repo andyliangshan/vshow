@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 作者 -->
+    <meta name="author" content="author">
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <!-- content的参数有all，none，index，noindex，follow，nofollow，默认是all -->
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <!-- 解决部分兼容性问题，如果安装了GCF，则使用GCF来渲染页面，如果未安装GCF，则使用最高版本的IE内核进行渲染。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <!-- 页面按原比例显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="/public/assets/libs/bootstrap/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/about.css" />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <title><%= title%></title>
+</head>
+<body>
+<%- include('components/head.html', {page: 'about'})%>
+<!--全屏轮播banner-->
+<div id="carousel-example-generic" class="carousel slide my-slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/service/service_lunbo_img1.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInLeft"></span>
+                    <span class="title bounceInLeft">服务介绍</span>
+                    <span class="desc bounceInLeft">来自国外的专业技术团队，提供一站式集成个性服务方案。</span>
+                    <span class="desc bounceInLeft">打造无盲点的视觉效果展示，享受不一样的视觉之美。</span>
+                </p>
+            </a>
+        </div>
+        <div class="item">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInDown"></span>
+                    <span class="title bounceInLeft">服务介绍</span>
+                    <span class="desc bounceInLeft">来自国外的专业技术团队，提供一站式集成个性服务方案。</span>
+                    <span class="desc bounceInLeft">打造无盲点的视觉效果展示，享受不一样的视觉之美。</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<!--全屏轮播banner-->
+<!--联系我们-->
+<div class="relatebox">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-xs-12 col-sm-12 relate-textbox">
+                <div class="relate-title">联系我们</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8 relateinfo-img relateinfo-img1">
+                <img src="/public/assets/images/service/about_img1.jpg" alt=""/>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 relateinfo-img relateinfo-imgs">
+                <img src="/public/assets/images/service/about_img2.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8 relateinfo-text">
+                <p>深圳市南山区蛇口南海意库6栋502#</p>
+                <p>电话：0755-26812810</p>
+                <p>邮箱：yong@vshowdome.com</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 relateinfo-after">
+                <img src="/public/assets/images/service/about_img3.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+<!--联系我们-->
+<%- include('components/foot.html')%>
+<script type="text/javascript" src="/public/assets/scripts/vshow/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/public/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/public/assets/scripts/vshow/about.js"></script>
+</body>
+</html>

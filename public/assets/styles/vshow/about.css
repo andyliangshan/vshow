@@ -1,0 +1,256 @@
+@import "reset.css";
+/**轮播样式**/
+.carousel-inner .item p {
+    display: inline-block;
+    position: absolute;
+    right: 14%;
+    top: 35%;
+}
+.carousel-inner .item p span {
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    clear: both;
+    overflow: hidden;
+}
+.carousel-inner .item p span.lineto {
+    height: 4px;
+    width: 18%;
+    background: #f6270b;
+    margin-bottom: 20px;
+    clear: both;
+    overflow: hidden;
+}
+.carousel-inner .item p span.title {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.carousel-inner .item p span.desc {
+    margin-bottom: 15px;
+}
+/**轮播样式**/
+.relatebox {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 60px;
+    background: #fff;
+}
+.relatebox .relate-title {
+    padding: 20px 0 20px 40px;
+    font-size: 18px;
+    color: #fff;
+    background: #2d2d2d;
+    width: 50%;
+}
+.relatebox .relateinfo-img {
+    padding-right: 0;
+}
+.relateinfo-imgs {
+    padding-left: 0;
+    overflow: hidden;
+}
+.relateinfo-img1, .relate-textbox {
+    padding: 0;
+    overflow: hidden;
+}
+.relatebox .relateinfo-img img {
+    width: 100%;
+    vertical-align: middle;
+    height: 714px;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.relatebox .relateinfo-img:hover img {
+    -webkit-transform: matrix(1.04,0,0,1.04,0,0);
+    -moz-transform: matrix(1.04,0,0,1.04,0,0);
+    -o-transform: matrix(1.04,0,0,1.04,0,0);
+    transform: matrix(1.04,0,0,1.04,0,0);
+}
+.relateinfo-text {
+    padding: 80px 0 80px 40px;
+    font-size: 18px;
+    color: #fff;
+    background: #2d2d2d;
+    height: 250px;
+}
+.relateinfo-text p {
+    line-height: 30px;
+}
+.relateinfo-after {
+    padding: 0;
+    overflow: hidden;
+}
+.relateinfo-after img {
+    width: 100%;
+    height: 250px;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.relateinfo-after:hover img {
+    -webkit-transform: matrix(1.04,0,0,1.04,0,0);
+    -moz-transform: matrix(1.04,0,0,1.04,0,0);
+    -o-transform: matrix(1.04,0,0,1.04,0,0);
+    transform: matrix(1.04,0,0,1.04,0,0);
+}
+.servicebox {
+    clear: both;
+    overflow: hidden;
+    padding-top: 110px;
+}
+.servicebox .serviceInfo {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.servicebox .serviceInfo-cont {
+    text-align: center;
+    width: 100%;
+}
+.servicebox .serviceInfo-cont-title {
+    color: #f6270b;
+    font-size: 18px;
+}
+.servicebox .serviceInfo-cont h1 {
+    clear: both;
+    overflow: hidden;
+    font-size: 48px;
+    color: #313131;
+}
+.servicebox .serviceInfo-cont .serviceInfo-cont-line {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+.servicebox .serviceInfo-cont .serviceInfo-cont-line img {
+    vertical-align: middle;
+}
+.servicebox .serviceInfo-cont-desc {
+    clear: both;
+    overflow: hidden;
+    padding-top: 50px;
+    line-height: 30px;
+    text-align: left;
+    color: #959595;
+    font-size: 20px;
+}
+.servicebox .servicebox-img {
+    clear: both;
+    overflow: hidden;
+    margin-top: 180px;
+}
+.servicebox .servicebox-img img {
+    width: 100%;
+}
+.servicebox .serviceArt {
+    clear: both;
+    overflow: hidden;
+    background: #313131;
+    padding: 135px 0 165px;
+}
+.serviceArt .serviceArt-title {
+    text-align: center;
+    width: 100%;
+}
+.serviceArt .serviceArt-title .serviceArt-title-top {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+.serviceArt .serviceArt-title .serviceArt-title-top img {
+    vertical-align: middle;
+}
+.serviceArt .serviceArt-title h1 {
+    padding: 20px 0;
+    clear: both;
+    overflow: hidden;
+    font-size: 48px;
+    color: #fff;
+    line-height: 60px;
+}
+.serviceArt-list {
+    clear: both;
+    overflow: hidden;
+    padding-top: 80px;
+}
+.serviceArt-list .col-sm-4, .serviceArt-list .col-md-3 {
+    width: 20%;
+    text-align: center;
+    height: 150px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.serviceArt-list .serviceArt-list-desc {
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    width: 100%;
+}
+.serviceArt-list .serviceArt-list-title {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    padding-top: 30px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*大于992px以上固定宽度为970px md >= 992px */
+@media (min-width: 992px){
+    /*全部-最大宽度*/
+    .container {
+        width: 970px;
+    }
+    /*全部-最大宽度*/
+    /*全部-页脚*/
+    #footer .footer-item-last{
+        border-right: 2px solid #c1c1c1;
+    }
+    #footer .footer-contact h2{
+        padding-left: 20px;
+    }
+    /* Safari 7.1+ (9.0 is the latest version of Safari at this time) */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        #footer .footer-contact h2{
+            padding-left: 10px !important;
+        }
+    }
+    /*全部-页脚*/
+}
+/*大于992px以上固定宽度为970px md >= 992px */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (max-width: 767px) {
+    .serviceArt-list .col-xs-12 {
+        width: 100%;
+    }
+    .serviceArt-list .serviceArt-list-desc {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .serviceArt .serviceArt-title .serviceArt-title-top img {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .serviceArt .serviceArt-title .serviceArt-title-top img {
+        width: 100%;
+    }
+    .serviceArt-list .col-sm-4, .serviceArt-list .col-md-3 {
+        height: 180px;
+    }
+}

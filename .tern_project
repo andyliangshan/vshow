@@ -1,0 +1,17 @@
+{
+    "libs": [
+        "browser",
+        "ecma6",
+        "chai",
+        "jquery"
+    ],
+    "plugins": {
+        "node": {},
+        "requirejs": {
+            "baseUrl": "./src",
+            "paths": {
+                "zrender": "bower_components/zrender/src"
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form action="/abc" method="post">
+  <input type="text" readonly value="abc">
+  <input type="text" disabled value="123">
+  <input type="text" name="testname">
+  <input type="submit" value="ok">
+</form>
+
+<script>
+  var arr = [1, 2, 3, 4];
+
+
+  var arr2 = [[1, 2, 3], [4, 5, 6]];
+  var arrRes = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    var len = arr.length;
+    if ((i + 1) % 3 == 0) {
+      arrRes.push([arr[i - 2], arr[i - 1], arr[i]]);
+    } else {
+      if (len % 3 == 1 && i === len - 1) {
+        arrRes.push([arr[len - 1]]);
+      }
+
+      if (len % 3 == 2 && i === len - 1) {
+        arrRes.push([arr[len - 2], arr[len - 1]]);
+      }
+
+    }
+  }
+
+  console.log(arrRes);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 作者 -->
+    <meta name="author" content="author">
+    <!-- 网页描述 -->
+    <meta name="description" content="hello">
+    <!-- 关键字使用","分隔 -->
+    <meta name="keywords" content="a,b,c">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- 用来防止别人在框架里调用你的页面 -->
+    <meta http-equiv="Window-target" content="_top">
+    <!-- content的参数有all，none，index，noindex，follow，nofollow，默认是all -->
+    <meta name="robots" content="none">
+    <!-- 收藏图标 -->
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <!-- 网页不会被缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <!-- 解决部分兼容性问题，如果安装了GCF，则使用GCF来渲染页面，如果未安装GCF，则使用最高版本的IE内核进行渲染。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <!-- 页面按原比例显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="/public/assets/libs/bootstrap/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="/public/assets/styles/vshow/product.css" />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <title><%= title%></title>
+</head>
+<body>
+<%- include('components/head.html', {page: 'instru'})%>
+<!--头部轮播-->
+<div id="carousel-example-generic" class="carousel slide my-slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInLeft"></span>
+                    <span class="title bounceInLeft">移动空间</span>
+                    <span class="desc bounceInLeft">一次冲击全球的 移动多媒体</span>
+                    <span class="desc bounceInLeft">一个沉浸式体验、多维感知、愉悦新颖的空间。</span>
+                </p>
+            </a>
+        </div>
+        <div class="item">
+            <a target="_blank" href="#">
+                <img src="/public/assets/images/main/index-banner.jpg" alt="" style="width: 1920px; max-width: 1920px; margin-left: -77.5px;">
+                <p>
+                    <span class="lineto bounceInDown"></span>
+                    <span class="title bounceInDown">移动空间</span>
+                    <span class="desc bounceInDown">一次冲击全球的 移动多媒体</span>
+                    <span class="desc bounceInDown">一个沉浸式体验、多维感知、愉悦新颖的空间。</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<!--头部轮播-->
+<!--产品介绍-->
+<div class="productInstrBox">
+    <div class="container">
+        <div class="row">
+            <div class="boxProduct">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="img img1"><img src="/public/assets/images/product/product_instr_img1.png" alt="" /></div>
+                    <div class="img img2 img3"><img src="/public/assets/images/product/product_instr_img3.png" alt="" /></div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="boxborder">
+                        <div class="boxborder-title">
+                            <div class="boxborder-title-h1">360°沉浸式体验</div>
+                            <h1>产品介绍</h1>
+                            <div class="boxborder-title-line"><img src="/public/assets/images/product/product_line.png" alt="" /></div>
+                        </div>
+                        <div class="boxborder-desc">
+                            移动空间以激活创意为主旨，各类创新活动项目为载体，以互动交流为目的，结合资源整合、数字技术、创新工具，营造一个互动交流、信息共享的新空间。可充分利用其多变性、灵活性与领先的技术，为各领域各行业打造所需的个性化定制产品，实现移动空间覆盖多行业多领域。广泛应用于商业活动、展览厅、发布会、博物馆、科技馆、天文馆、海洋馆、主题公园等科普教育机构，为客户提供完全的沉浸式视觉展示。移动空间不仅能够获得非凡的视觉享受，还能体验科技与生活相结合的乐趣，在这个科技引领的时代里，实现超预期价值体现。
+                        </div>
+                        <div class="circle"><img src="/public/assets/images/product/product_instr_img5.png" alt=""/></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="img img1"><img src="/public/assets/images/product/product_instr_img2.png" alt="" /></div>
+                    <div class="img img2"><img src="/public/assets/images/product/product_instr_img4.png" alt="" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--产品介绍-->
+<!--产品规格-->
+<div class="productStandrand">
+    <div class="productStandrand-img"><img src="/public/assets/images/product/productStand.jpg" alt="" /></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="standrad">
+                    <div class="standrad-title">产品规格</div>
+                    <div class="standrad-subtitle">规格齐全，最小可至3米，最大可达35米。</div>
+                    <div class="standrad-table">
+                        <div class="row tableTop">
+                            <div class="col-xs-3"></div>
+                            <div class="col-xs-3">8米</div>
+                            <div class="col-xs-3">10米</div>
+                            <div class="col-xs-3">12米</div>
+                        </div>
+                        <div class="tableBot">
+                            <div class="row listser">
+                                <div class="col-xs-3">球幕直径</div>
+                                <div class="col-xs-3">8米</div>
+                                <div class="col-xs-3">10米</div>
+                                <div class="col-xs-3">12米</div>
+                            </div>
+                            <div class="row listser">
+                                <div class="col-xs-3">球幕高度</div>
+                                <div class="col-xs-3">5.7米</div>
+                                <div class="col-xs-3">7.5米</div>
+                            </div>
+                            <div class="row listser">
+                                <div class="col-xs-3">坐席容量</div>
+                                <div class="col-xs-3">30人</div>
+                                <div class="col-xs-3">35人</div>
+                                <div class="col-xs-3">79人</div>
+                            </div>
+                            <div class="row listser">
+                                <div class="col-xs-3">站席容量</div>
+                                <div class="col-xs-3">40人</div>
+                                <div class="col-xs-3">60人</div>
+                                <div class="col-xs-3">140人</div>
+                            </div>
+                            <div class="row listser">
+                                <div class="col-xs-3">占地面积</div>
+                                <div class="col-xs-3">47米</div>
+                                <div class="col-xs-3">70</div>
+                                <div class="col-xs-3">95</div>
+                            </div>
+                            <div class="row listser">
+                                <div class="col-xs-3">屏幕面积</div>
+                                <div class="col-xs-3">81米</div>
+                                <div class="col-xs-3">111米</div>
+                                <div class="col-xs-3">200米</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-8"><img src="/public/assets/images/product/product_instr_instructure.jpg" alt="" width="100%"/></div>
+        </div>
+    </div>
+</div>
+<!--产品规格-->
+<!--影片介绍-->
+<div class="movieInstru">
+    <div class="movieInstru-img"><img src="/public/assets/images/product/product_vide_big.jpg" alt="" /></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="movieInstru-info">
+                    <div class="movieInstru-title">
+                        <div class="movieInstru-title-h1">丰富的影片资源</div>
+                        <h1>影片介绍</h1>
+                        <div class="movieInstru-title-line"><img src="/public/assets/images/product/product_line.png" alt="" /></div>
+                    </div>
+                    <div class="movieInstru-info-desc">
+                        移动空间以激活创意为主旨，各类创新活动项目为载体，以互动交流为目的，结合资源整合、数字技术、创新工具，营造一个互动交流、信息共享的新空间。可充分利用其多变性、灵活性与领先的技术，为各领域各行业打造所需的个性化定制产品，实现移动空间覆盖多行业多领域。广泛应用于商业活动、展览厅、发布会、博物馆、科技馆、天文馆、海洋馆、主题公园等科普教育机构，为客户提供完全的沉浸式视觉展示。移动空间不仅能够获得非凡的视觉享受，还能体验科技与生活相结合的乐趣，在这个科技引领的时代里，实现超预期价值体现。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container moviebox">
+        <div class="row">
+            <div class="movielist clearfix">
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video1.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video2.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video3.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video4.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video5.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video6.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video7.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video8.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video9.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video10.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video11.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video12.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video13.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video14.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video15.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video16.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video17.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video18.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video19.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video20.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video21.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video22.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video23.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video24.jpg" alt=""/></div>
+                <div class="col-xs-12 col-sm-4 col-md-3"><img src="/public/assets/images/product/product_video25.jpg" alt=""/></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--影片介绍-->
+<%- include('components/foot.html')%>
+<script type="text/javascript" src="/public/assets/scripts/vshow/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="/public/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/public/assets/scripts/vshow/ZoomPic.js"></script>
+<script type="text/javascript" src="/public/assets/scripts/vshow/productInstru.js"></script>
+</body>
+</html>

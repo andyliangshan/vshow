@@ -1,0 +1,88 @@
+{
+  /*
+   * ENVIRONMENTS
+   * =================
+   */
+
+  // Define globals exposed by modern browsers.
+  "browser": true,
+  // Define globals exposed by jQuery.
+  "jquery": true,
+  // Define globals exposed by Node.js.
+  "node": true,
+  // Allow ES6.
+  "esnext": true,
+  /*
+   * ENFORCING OPTIONS
+   * =================
+   */
+
+  // Force all variable names to use either camelCase style or UPPER_CASE
+  // with underscores.
+
+  // Prohibit use of == and != in favor of === and !==.
+  "eqeqeq": true,
+  // Enforce tab width of 2 spaces.
+  "indent": 2,
+  // Prohibit use of a variable before it is defined.
+  "latedef": true,
+  // Enforce line length to 80 characters
+  "maxlen": 100,
+  // Require capitalized names for constructor functions.
+  "newcap": true,
+  // Enforce use of single quotation marks for strings.
+  "quotmark": "single",
+  // Enforce placing 'use strict' at the top function scope
+  "strict": true,
+  // Prohibit use of explicitly undeclared variables.
+  "undef": true,
+  // Warn when variables are defined but never used.
+  "unused": true,
+  /*
+   * RELAXING OPTIONS
+   * =================
+   */
+
+  // Suppress warnings about == null comparisons.
+  "eqnull": true,
+  // Pre definitions
+  "predef": [
+    "angular"
+  ],
+  //*****
+  //added
+  //*****
+  //禁用为运算，防止&&和&符号冲突
+  "bitwise": true,
+  //循环和条件判断等必须使用括号包围
+  "curly": true,
+  //禁止对原生对象原型重写
+  "freeze": true,
+  //禁止使用 arguments.caller 和 arguments.callee,遗弃api
+  "noarg": true,
+  //设定最大深度嵌套，易于维护和阅读
+  "maxdepth": 4,
+  //***
+  //警告
+  //***
+  //忽略debugger
+  "debug": true,
+  //对eval使用警告
+  "evil": true,
+  // 行末尾的分号检查
+  "lastsemic": true,
+  //检查无效的typeof探测
+  "notypeof": true,
+  //属性点操作
+  "sub": true,
+  "globals": {
+    /* MOCHA: http://stackoverflow.com/a/19572515/130638 */
+    "describe": false,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "should": false,
+    "after": false,
+    "afterEach": false
+  }
+}

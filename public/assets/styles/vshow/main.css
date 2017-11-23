@@ -1,0 +1,234 @@
+@import "reset.css";
+/**轮播样式**/
+.carousel-inner .item p {
+    display: inline-block;
+    position: absolute;
+    left: 12%;
+    top: 35%;
+}
+.carousel-inner .item p span {
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    clear: both;
+    overflow: hidden;
+}
+.carousel-inner .item p span.lineto {
+    height: 4px;
+    width: 18%;
+    background: #f6270b;
+    margin-bottom: 20px;
+    clear: both;
+    overflow: hidden;
+}
+.carousel-inner .item p span.title {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.carousel-inner .item p span.desc {
+    margin-bottom: 15px;
+}
+/**轮播样式**/
+.eduGongguan {
+    clear: both;
+    overflow: hidden;
+    padding: 120px 15px 90px;
+}
+
+.eduGongguan .con {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.eduGongguan .con .bgs {
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.eduGongguan .con .bgs img {
+    vertical-align: middle;
+    max-width: 491px;
+    width: 100%;
+}
+.eduGongguan .con .backtobg {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .3;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    z-index: 1;
+}
+.eduGongguan .con .box {
+    position: absolute;
+    top: -500%;
+    width: 100%;
+    font-size: 28px;
+    color: #fff;
+    margin-top: -45px;
+    z-index: 2;
+}
+.eduGongguan .con .box .cname {
+    font-size: 50px;
+    clear: both;
+    overflow: hidden;
+}
+.produceInstru {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+}
+.produceInstru .container {
+    width: 100%;
+}
+.produceInstru .con {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+.produceInstru .con .bgs {
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+.produceInstru .con .bgs img {
+    vertical-align: middle;
+    max-width: 937px;
+    width: 100%;
+}
+.produceInstru .con .bsd img {
+    vertical-align: middle;
+    max-width: 1890px;
+    width: 100%;
+}
+.produceInstru .con .backtobg {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .3;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    z-index: 1;
+}
+.produceInstru .con .box {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    font-size: 28px;
+    color: #fff;
+    margin-top: -45px;
+    z-index: 2;
+}
+.produceInstru .con .box .cname {
+    font-size: 50px;
+    clear: both;
+    overflow: hidden;
+}
+.vshowInfo {
+    clear: both;
+    padding: 175px 0 155px;
+}
+.vshowInfo .leftcont {
+  margin: 10px 0 0;
+}
+.vshowInfo .leftcont h1 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    line-height: 0.87;
+    font-weight: bold;
+    color: #313131;
+}
+.vshowInfo .leftcont h1 span {
+    display: block;
+}
+.vshowInfo .leftcont h4 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-indent: 4px;
+    color: #313131;
+    margin-top: 10px;
+    clear: both;
+    overflow: hidden;
+}
+.vshowInfo .leftcont .addr {
+    margin: 20px 0 0 0;
+    letter-spacing: 2px;
+    color: #313131;
+    font-size: 18px;
+}
+.vshowInfo .leftcont .addr span {
+    display: inline-block;
+}
+.vshowInfo .rightcont {
+    overflow: hidden;
+}
+.vshowInfo .rightcont .desc {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #313131;
+}
+.vshowInfo .rightcont .desc img {
+    width: 100%;
+    max-height: 70px;
+    margin-top: 0;
+}
+
+/*大于992px以上固定宽度为970px md >= 992px */
+@media (min-width: 992px){
+    /*全部-最大宽度*/
+    .container {
+        width: 970px;
+    }
+    /*全部-最大宽度*/
+    /*全部-页脚*/
+    #footer .footer-item-last{
+        border-right: 2px solid #c1c1c1;
+    }
+    #footer .footer-contact h2{
+        padding-left: 20px;
+    }
+    /* Safari 7.1+ (9.0 is the latest version of Safari at this time) */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        #footer .footer-contact h2{
+            padding-left: 10px !important;
+        }
+    }
+    /*全部-页脚*/
+}
+/*大于992px以上固定宽度为970px md >= 992px */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*手机超小屏幕下的单独样式 xs < 768px */
+@media (max-width: 991px) {
+    .eduGongguan .con .backtobg, .produceInstru .con .backtobg {
+        height: 100%;
+    }
+    .eduGongguan .con .box, .produceInstru .con .box {
+        top: 50%;
+    }
+}
