@@ -20,7 +20,7 @@ const config = {
   // Server Configuration
   // ----------------------------------
   server_host: 'vshow.com',
-  server_port: process.env.PORT || 3001,
+  server_port: process.env.PORT || 8080,
   session_secret: 'pc.sem',
 
 };

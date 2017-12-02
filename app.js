@@ -203,7 +203,7 @@ app.use(function (err, req, res, next) {
 
 if (!module.parent) {
   app.listen(systemConfig.server_port, ()=> {
-    logger.info('❤️  sem listening on port', systemConfig.server_port || 3001);
+    logger.info('❤️  sem listening on port', systemConfig.server_port || 8080);
     logger.info('❤️  You can debug with http://' + systemConfig.server_host + ':' + systemConfig.server_port);
   });
 }
