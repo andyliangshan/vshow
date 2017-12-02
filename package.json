@@ -14,8 +14,8 @@
     "test:single": "istanbul cover -x *.test.js _mocha -- -R spec test/**/*.js --compilers js:babel/register",
     "posterversion": "babel-node ./server/bin/version",
     "fb-watch": "babeln-node ./bin/watchfile.js",
-    "pm2": "NODE_ENV=development pm2 start app.js --name sem --interpreter ./node_modules/.bin/babel-node",
-    "pm2-prod": "NODE_ENV=production pm2 start app.js --name sempc --interpreter ./node_modules/.bin/babel-node",
+    "pm2": "NODE_ENV=development pm2 start app.js --name vshow --interpreter ./node_modules/.bin/babel-node",
+    "pm2-prod": "NODE_ENV=production pm2 start app.js --name vshow --interpreter ./node_modules/.bin/babel-node",
     "build": "webpack",
     "gulp": "gulp"
   },
